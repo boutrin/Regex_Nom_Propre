@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nom Propre Regex</title>
+</head>
+<body>
+<form action="" name="formulaire">
+		Nom<input type="text" id="nom" >
+		<input type="submit"  value="Valider" onclick="valider();">
+</form>
+	
+	<script>
+	function valider(){
+		
+		var nom =document.formulaire.nom.value;
+		var  model = /^[A-Z][a-z]/;
+		
+		if(model.test(nom))
+		alert("Merci")
+	else
+alert("Veuillez saisir la premiere lettre en Majuscule");
+		return false;
+	}
+	</script>
+
+	
+</body>
+</html>
